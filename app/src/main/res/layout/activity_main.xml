@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/textEt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/text2Et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            app:StrokeColors="#FFFFFF"
+            app:StrokeWidth="5dp"
+            android:backgroundTint="#000000"/>
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:CornarRadius="5dp"
+            android:textColor="#FFFFFF"
+            app:StrokeColors="#FFFFFF"
+            app:StrokeWidth="5dp"
+            android:backgroundTint="#000000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"/>
+
+
+</LinearLayout>
